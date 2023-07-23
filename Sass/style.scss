@@ -486,6 +486,40 @@ body {
   .wrapper {
     padding: 60px;
 
+    .work-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+
+      .work-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 19px;
+        gap: 0;
+        width: 358px;
+        height: auto;
+
+        .img-work {
+          img {
+            height: 100%;
+          }
+        }
+      }
+
+      div.work-description {
+        a {
+          &:hover {
+            background-color: #91cdb9;
+            color: #000000;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+
     .footer-container {
       .footer-logo {
         img {
@@ -574,39 +608,7 @@ body {
       }
     }
 
-    .work-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px;
-
-      .work-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 16px 19px;
-        gap: 0;
-        width: 358px;
-        height: auto;
-
-        .img-work {
-          img {
-            height: 100%;
-          }
-        }
-      }
-
-      div.work-description {
-        a {
-          &:hover {
-            background-color: #91cdb9;
-            color: #000000;
-            transition: all 0.5s;
-          }
-        }
-      }
-    }
+    
   }
 }
 
@@ -903,11 +905,11 @@ body {
 }
 
 // Project Section Coding
+
 .hero-img {
   position: absolute;
   top: 0;
-  left: 0;
-  background-image: url("../images/Project_1.png");
+  left: 0;  
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -915,6 +917,15 @@ body {
   z-index: -1;
   background-repeat: no-repeat;
 }
+
+.project_bg_1{
+  background-image: url("../images/Project_1.png");
+}
+
+.project_bg_2{
+  background-image: url("../images/Project_2.png");
+}
+
 .wrapper {
   .project-hero-banner {
     height: 90vh;
@@ -1976,6 +1987,10 @@ body {
 
 .work_1{
   background-image: url('../images/Work_1.png');
+}
+
+.work_2{
+  background-image: url('../images/UI_UX_Projects/Portfolio_projects.png');
 }
 
 .web_work_1{
