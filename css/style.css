@@ -208,17 +208,6 @@ body {
   box-shadow: 6px 6px 4px rgba(145, 205, 185, 0.3);
   border-radius: 20px;
 }
-.wrapper .work-container .work-content .img-work img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.wrapper .work-container .work-content .web-work-img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 .wrapper .work-container div.work-description a {
   color: #91cdb9;
   border: 2px solid #91cdb9;
@@ -393,18 +382,6 @@ body {
   .wrapper {
     padding: 60px;
   }
-  .wrapper .work-container .work-content {
-    flex-direction: row;
-    align-items: initial;
-    justify-content: space-between;
-    width: 100%;
-    height: 300px;
-  }
-  .wrapper .work-container .work-content .img-work img {
-    height: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .wrapper .footer-container .footer-logo img {
     display: initial;
     width: 90px;
@@ -413,8 +390,8 @@ body {
 }
 @media only screen and (min-width: 920px) {
   .wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .wrapper .hero-section .hero-container {
     display: flex;
@@ -494,7 +471,7 @@ body {
 }
 @media only screen and (min-width: 1200px) {
   .wrapper {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
   }
   .wrapper .hero-section {
@@ -1498,5 +1475,39 @@ body {
   }
   .work-web-container .work-web-content .web-detail .web-content-right p {
     font-size: 1rem;
+  }
+}
+.img-work, .web-work-img {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work_1 {
+  background-image: url("../images/Work_1.png");
+}
+
+.web_work_1 {
+  background-image: url("../images/FrontEnd_projects/weather_temp_zone_app.png");
+}
+
+.web_work_2 {
+  background-image: url("../images/FrontEnd_projects/you_search.png");
+}
+
+.web_work_3 {
+  background-image: url("../images/FrontEnd_projects/big_deals.png");
+}
+
+@media only screen and (min-width: 768px) {
+  .img-work, .web-work-img {
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .img-work, .web-work-img {
+    height: 13rem;
   }
 }/*# sourceMappingURL=style.css.map */
